@@ -63,15 +63,15 @@ def caesar_cipher(message, shift):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-    text=(input("Letter: ")).upper()
-    shift=int(input("How many places to shift? "))
-    newtext=text.replace(" ","")
     output=""
-    for char in newtext:
-        output +=chr((ord(char)-65+shift)%26+65)
-    
-    print(output)
+    for char in message:
+        if char == ' ':
+            output += ' '
+        else:
+            output += chr((ord(char)-65+shift)%26+65)
+    return output
 
+caesar_cipher('ABC DEF', 1)
 def shift_by_letter(letter, letter_shift):
     '''Shift By Letter. 
     10 points.
