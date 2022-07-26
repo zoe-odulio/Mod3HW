@@ -37,9 +37,6 @@ def shift_letter(letter, shift):
     '''
     return chr((ord(letter)-65+shift)%26+65)
 
-print(shift_letter("A", 1))
-print('^')
-
 def caesar_cipher(message, shift):
     '''Caesar Cipher. 
     10 points.
@@ -105,8 +102,6 @@ def shift_by_letter(letter, letter_shift):
             return ' '
         return chr((ord(letter)-65+output)%26+65)
     return shift_by_letters(letter,output)
-
-
 
 def vigenere_cipher(message, key):
     '''Vigenere Cipher. 
