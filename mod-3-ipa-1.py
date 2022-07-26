@@ -96,8 +96,7 @@ def shift_by_letter(letter, letter_shift):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-    # letter=str(input("Letter: "))
-    # letternum=int((ord(input("Letter digit to shift:"))))
+    
     def alphanum(letternum):
         return int(ord(letternum))-65
     output=alphanum(letter_shift)
