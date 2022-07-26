@@ -106,7 +106,7 @@ def shift_by_letter(letter, letter_shift):
         return letternum-96
     output=alphanum(letternum)
     def shift_by_letters(letter,output):
-    return chr((ord(letter)-97+output)%26+97)
+        return chr((ord(letter)-97+output)%26+97)
     shift_by_letters(letter,output)
 
 def vigenere_cipher(message, key):
